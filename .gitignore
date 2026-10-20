@@ -1,0 +1,147 @@
+# Marksmen Building & Design — .gitignore
+# Built from github/gitignore templates (Global/Windows, Global/macOS,
+# Global/VisualStudioCode, Global/JetBrains, Node) plus project-specific
+# rules that keep secrets and private business files out of this public repo.
+
+# =====================================================================
+# Secrets & credentials — never commit these
+# =====================================================================
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.crt
+*.p12
+*.pfx
+*.jks
+*.keystore
+id_rsa*
+id_ed25519*
+*.ppk
+*.kdbx
+credentials*.json
+service-account*.json
+secrets.*
+*.secret
+.npmrc
+.netrc
+.htpasswd
+
+# Hosting / deploy tool state (can hold tokens or project IDs)
+.vercel/
+.netlify/
+.firebase/
+.serverless/
+.wrangler/
+
+# =====================================================================
+# Private business files — keep in the company drive, not the website repo
+# =====================================================================
+Billing/
+Overview/
+Images/
+*.docx
+*.doc
+*.xlsx
+*.xls
+*.pptx
+*.csv
+*.zip
+# Original high-resolution / unedited photos (may carry GPS metadata)
+*.heic
+*.HEIC
+*.raw
+*.dng
+originals/
+source-images/
+
+# =====================================================================
+# Windows (github/gitignore Global/Windows)
+# =====================================================================
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+*.stackdump
+[Dd]esktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+*.lnk
+
+# =====================================================================
+# macOS (github/gitignore Global/macOS)
+# =====================================================================
+.DS_Store
+.localized
+__MACOSX/
+.AppleDouble
+.LSOverride
+Icon[]
+._*
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+# =====================================================================
+# Editors (github/gitignore Global/VisualStudioCode, Global/JetBrains)
+# =====================================================================
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+!.vscode/*.code-snippets
+*.vsix
+.idea/
+*.iws
+*.iml
+*.swp
+*.swo
+*~
+
+# AI assistant local settings
+.claude/settings.local.json
+
+# =====================================================================
+# Node / build tooling (github/gitignore Node) — in case a build step is added
+# =====================================================================
+node_modules/
+jspm_packages/
+web_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+*.log
+logs/
+.npm
+.eslintcache
+.stylelintcache
+.cache/
+.parcel-cache/
+.vite/
+.temp/
+dist/
+coverage/
+*.tgz
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
